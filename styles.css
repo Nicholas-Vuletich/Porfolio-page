@@ -1,0 +1,154 @@
+:root {
+    --navbar-boja-pozadine:#be3144;
+    --boja-anchor:white;
+    --hover-boja:#5789c2;
+    --welcome-section-background:linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    --plava-pozadina:#45567d;
+  }
+  
+  body{
+    margin:0;
+  }
+  
+  #navbar{
+    display:flex;
+    position:fixed;
+    justify-content:flex-end;
+    align-items:center;
+    width:100%;
+    height:4rem;
+    border-bottom:5px solid black;
+    background: var(--navbar-boja-pozadine);
+  }
+  
+  .navbar-anchor{
+    font-family: 'Poppins', sans-serif;
+    color:var(--boja-anchor);
+    font-size:1.4rem;
+    margin:2.5rem;
+    text-decoration:none;
+  }
+  
+  .navbar-anchor:hover{
+    color:var(--hover-boja);
+  }
+  
+  #welcome-section{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  width:100%;
+  height: 100vh;
+  background:var(--welcome-section-background);
+  border-bottom:5px solid black;
+  }
+  
+  .welcomeNaslov{
+    font-family: 'Raleway', sans-serif;
+    font-size:5rem;
+    font-weight: 700;
+    color:var(--boja-anchor);
+    text-align: center;
+  }
+  
+  .welcomeParagraf{
+    font-size: 3rem;
+    font-weight: 200;
+    font-style: italic;
+    color: var(--navbar-boja-pozadine);
+  }
+  
+  .projectSection{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    width:100%;
+    height:30rem;
+    background:var(--plava-pozadina);
+    border-bottom:5px solid black;
+  }
+  
+  .project-tile{
+    font-family: 'Raleway', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--boja-anchor);
+  }
+  
+  .gitIkona{
+    font-size:4rem;
+    color:black; 
+  }
+  
+  #profile-link{
+    font-size:4rem;
+    color:black;
+    text-decoration:none;
+  }
+  
+  .contactSection{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    height:15rem;
+    background:var(--welcome-section-background);
+  }
+  
+  .kontaktNaslov{
+    font-family: 'Raleway', sans-serif;
+    font-size:2rem;
+    font-weight: 700;
+    color:var(--boja-anchor);
+  }
+  
+  .drustveneMrezeDiv{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    height:4rem;
+    /* border:2px solid white; */
+  }
+  
+  .DMKontaktIkona{
+    font-size:1.8rem;
+    color:var(--boja-anchor);
+  }
+  
+  .kontaktLink{
+    font-size:1.8rem;
+    color:var(--boja-anchor);
+    margin:1.5rem;
+    text-decoration:none;
+  }
+  
+  @media(width < 576px){
+    #navbar{
+     display:flex;
+     flex-direction:column;
+     height:4.6rem;
+     margin:0;
+     justify-content:center;
+     align-items:center;
+    }
+    .navbar-anchor{
+      margin:0;
+    }
+    .project-tile{
+      font-size: 2rem;
+      font-weight: 700;
+    }
+  }
+  
+  @media(width < 480px){
+    .drustveneMrezeDiv{
+      display: contents;
+    }
+    .kontaktLink{
+      margin:0.3rem;
+    }
+  }
